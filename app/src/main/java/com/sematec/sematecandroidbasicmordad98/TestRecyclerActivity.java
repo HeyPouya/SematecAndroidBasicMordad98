@@ -36,7 +36,7 @@ public class TestRecyclerActivity extends AppCompatActivity {
 
 
 
-        TestRecyclerAdapter adapter = new TestRecyclerAdapter(list);
+        TestRecyclerAdapter adapter = new TestRecyclerAdapter(list,this);
         recycler.setAdapter(adapter);
         recycler.setLayoutManager(new LinearLayoutManager(TestRecyclerActivity.this, RecyclerView.VERTICAL, false));
 

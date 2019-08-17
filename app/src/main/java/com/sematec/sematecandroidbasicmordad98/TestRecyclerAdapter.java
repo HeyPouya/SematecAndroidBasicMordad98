@@ -12,9 +12,11 @@ import java.util.List;
 
 public class TestRecyclerAdapter extends RecyclerView.Adapter<TestRecyclerAdapter.TestRecyclerViewHolder> {
 
+    TestRecyclerActivity myActivity;
     List<String> myList;
-    public TestRecyclerAdapter(List<String> list) {
+    public TestRecyclerAdapter(List<String> list,TestRecyclerActivity activity) {
         myList = list;
+        myActivity = activity;
     }
 
     @NonNull
@@ -40,10 +42,22 @@ public class TestRecyclerAdapter extends RecyclerView.Adapter<TestRecyclerAdapte
     class TestRecyclerViewHolder extends RecyclerView.ViewHolder {
         TextView txtName;
 
-        public TestRecyclerViewHolder(@NonNull View itemView) {
+        public TestRecyclerViewHolder(@NonNull View itemView ) {
             super(itemView);
 
             txtName = itemView.findViewById(R.id.txtName);
+
+            
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+
+
+                }
+            });
+
         }
     }
 }
