@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sematec.sematecandroidbasicmordad98">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestAsyncClientActivity">
+        <activity android:name=".TestNotificationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -20,9 +18,23 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".TestURLConnectionActivity">
+        <activity android:name=".TestCustomTextActivity">
         </activity>
-        <activity android:name=".TestThreadActivity"></activity>
+        <activity android:name=".TestServiceActivity"></activity>
+        <activity android:name=".TestWebViewActivity" />
+        <activity
+            android:name=".TestDialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".TestAlertDialogActivity" />
+        <activity android:name=".TestHandlerActivity" />
+        <activity android:name=".TestMenuActivity" />
+        <activity android:name=".TestPermissionActivity" />
+        <activity android:name=".TestSelectorActivity" />
+        <activity android:name=".TestVideoViewActivity" />
+        <activity android:name=".TestDBActivity" />
+        <activity android:name=".TestAsyncClientActivity" />
+        <activity android:name=".TestURLConnectionActivity" />
+        <activity android:name=".TestThreadActivity" />
         <activity android:name=".TestHTMLActivity" />
         <activity android:name=".TestRecyclerActivity" />
         <activity android:name=".TestNavigationDrawerActivity" />
@@ -30,6 +42,17 @@
         <activity android:name=".TestIntentActivity" />
         <activity android:name=".TestActivity" />
         <activity android:name=".MainActivity" />
+
+        <receiver android:name=".TestBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".TestService" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
 </manifest>

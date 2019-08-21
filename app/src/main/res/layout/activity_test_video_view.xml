@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestHTMLActivity">
+    tools:context=".TestVideoViewActivity">
 
-    <TextView
-        android:id="@+id/txtMessage"
-        style="@style/TextViewCustomStyle"
+
+    <VideoView
+        android:id="@+id/vv"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
